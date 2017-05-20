@@ -1,0 +1,99 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <meta name="format-detection" content="telephone=no,email=no">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <script type="text/javascript" src="../js/libs/flexible.js"></script>
+    <style>
+        /*避免出现{{}}*/
+        .ms-controller {visibility: hidden;}
+    </style>
+</head>
+<body class="wrapper ms-controller" ms-controller="root">
+<div id="header">
+    <div id="home"><a>好邻居便利店</a></div>
+    <div class="car_theme" id="car_edit" ms-click="events.edit">{{editText}}</div>
+    <div id="my"><a></a></div>
+</div>
+<div id="shoppingcar">
+    <div id="main">
+        <ul id="shopping_list">
+            <li class="select" ms-repeat="list">
+                <div ms-click="events.select" class="no_select select_ok"></div>
+                <div class="shopping_img"><a><img ms-attr-src="el.imgUrl"></a></div>
+                <div class="shopping_box">
+                    <h2>{{el.shopName}}</h2>
+
+                    <div class="shopping_box_bottom">
+                        <div class="unit_price">￥<span>{{el.price}}</span></div>
+                        <div class="number">x<span>{{el.prdNum}}</span></div>
+                        <!--编辑状态加减框-->
+                        <div class="number_content dsn">
+                            <div ms-click="events.minus($index,el.prdNum)" class="minus_icon js_minus"></div>
+                            <div class="number_edit">{{el.prdNum}}</div>
+                            <div ms-click="events.add($index,el.prdNum)" class="add_icon js_add"></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div id="floatbar_bottom">
+        <div id="select_all" class="select">
+            <div ms-click="events.selectAll" class="select_all no_select select_ok"></div>
+            <div class="select_all_txt">全选</div>
+        </div>
+        <div id="total_box"><!---->
+            <div>￥<span id="pay_account">{{totalMoney}}</span></div>
+            <div id="total_txt">合计</div>
+        </div>
+        <div id="account_btn"><a>去结算</a></div>
+        <div id="delete_btn" class="dsn">删除</div>
+    </div>
+    <!--+-数量弹框-->
+    <div class="pop_wrapper dsn" id="add_minus_Pop">
+        <div class="pop_con">
+            <h2>请输入数量</h2>
+
+            <div class="number_box">
+                <div class="number_minus js_minus"></div>
+                <input type="number" id="number_input" value="0">
+
+                <div class="number_add js_add"></div>
+            </div>
+            <div class="pop_btn" id="number_Btn">
+                <div class="pop_remove_btn">取消</div>
+                <div class="pop_sure_btn">确定</div>
+            </div>
+        </div>
+    </div>
+    <div class="pop_wrapper dsn" id="sure_Del">
+        <div class="pop_con">
+            <h2>确定删除这<span></span>件商品吗？</h2>
+
+            <div class="pop_btn" id="sure_Del_btn">
+                <div class="pop_remove_btn">考虑一下</div>
+                <div class="pop_sure_btn">确定</div>
+            </div>
+        </div>
+    </div>
+    <div class="pop_wrapper dsn" id="none_Select">
+        <div class="pop_con">
+            <h2>您还没有选择商品哦！</h2>
+        </div>
+    </div>
+</div>
+<!--购物车为空-->
+<div id="empty_cart" class="dsn">
+    <div id="empty">购物车空空如也T.T</div>
+    <div class="btn_box" id="goto_shop"><a>去逛逛</a></div>
+</div>
+<script src="../js/libs/jquery-1.11.1.js"></script>
+<script src="../js/libs/avalon.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/car.js"></script>
+</body>
+</html>

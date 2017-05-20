@@ -1,0 +1,104 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no,email=no">
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<title>商品详情页</title>
+<script type="text/javascript" src="../js/libs/flexible.js"></script>
+
+</head>
+<body id="product_details" class="wrapper">
+    <div id="header">
+        <div id="home"><a href="home.html">好邻居便利店</a></div>
+        <div id="my"><a></a></div>
+    </div> 
+    <div id="main">
+        <div id="content">
+
+        </div>
+        <div id="section2">
+            <div class="pro_content clearfix">
+                <div class="purchase_numtxt fl">购买数量</div>
+                <div class="purchase_num_box fr">
+                    <div id="minus" class="minus_icon js_minus"></div>
+                    <div id="prd-num" class="number_edit js_num">1</div>
+                    <div id="add" class="add_icon js_add"></div>
+                </div>
+            </div>
+        </div>
+        <div id="section3">
+            <div id="graphic_details">
+                <h2>图文详情</h2>
+                <div id="graphic_content">
+                    自己编辑的内容
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="floatbar_bottom">
+        <div id="floatbar_bottom_cart">
+            <a href="showShop.html"></a>
+            <div class="car_trolley dsn"></div>
+        </div>
+        <div id="join_car">加入购物车</div>
+        <div id="buy_now"><a>立即购买</a></div>
+    </div>
+    <!--+-数量弹框-->
+    <div class="pop_wrapper dsn" id="add_minus_Pop">
+        <div class="pop_con">
+            <h2>请输入数量</h2>
+            <div class="number_box">
+                <div class="number_minus js_minus"></div>
+                <input type="number" id="number_input" class="po_num">
+                <div class="number_add js_add"></div>
+            </div>
+            <div class="pop_btn" id="number_Btn">
+                <div class="pop_remove_btn">取消</div>
+                <div class="pop_sure_btn">确定</div>
+            </div>
+        </div>
+    </div>
+    <div class="pop_wrapper dsn" id="hasAdd">
+        <div class="pop_con">
+            <h2>已成功加入购物车!</h2>
+        </div>
+    </div>
+    <script type="template/text" id="tpl">
+        <div id="slideBox" class="slideBox">
+            <div class="bd">
+                <ul>
+                    <%
+                    var list = obj.imgList;
+                    for(var i=0;i<list.length;i++) {
+                    %>
+                    <li>
+                        <a class="pic"><img src="<%=list[i]%>"/></a>
+                    </li>
+                    <%
+                    }
+                    %>
+                </ul>
+            </div>
+            <div class="hd">
+                <ul></ul>
+            </div>
+        </div>
+        <div class="shopping_box">
+            <h2><%=obj.shopName%> <%=obj.disc%>/欢迎选购</h2>
+        <div class="shopping_box_bottom">
+                <div class="unit_price">￥<span><%=obj.price%></span></div>
+        <div class="number">剩余数量：<span><%=obj.leftNum%></span></div>
+        </div>
+        </div>
+        </div>
+    </script>
+    <script src="../js/libs/jquery-1.11.1.js"></script>
+    <script  src="../js/libs/Touch.1.1.js"></script>
+    <script src="../js/libs/underscore.js"></script>
+    <script src="../js/plugin/lhgdialog.js?skin=mac"></script>
+    <script src="../js/common-ajax2.js"></script>
+    <script src="../js/detail.js"></script>
+</body>
+</html>

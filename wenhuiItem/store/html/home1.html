@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <%
+    debugger;
+    var item;
+    var len = obj.length;
+    for (var i=0;i<len;i++) {
+    item = obj[i];
+    %>
+    <li>
+        <div class="product_box">
+            <a><img data-id="<%=item.id%>" data-shopName="<%=item.shopName%>" src="<%=item.imgUrl%>"></a>
+            <h2><a><%=item.shopName%></a></h2>
+            <div class="clearfix">
+                <div class="product_price fl">￥<span class="product_mpney"><%=item.price%></span></div>
+                <div class="product_car fr"></div>
+            </div>
+        </div>
+    </li>
+    <%
+    }
+    %>
+    <script type="template/text" id="tpl">
+
+</script>
+    <script src="../js/libs/jquery-1.11.1.js"></script>
+    <!--<script src="../js/libs/zepto.js"></script>-->
+    <script  src="../js/libs/Touch.1.1.js"></script>
+    <script src="../js/plugin/lhgdialog.js?skin=mac"></script>
+    <script src="../js/libs/underscore.js"></script>//引入underscore库
+    <script src="../js/common.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>

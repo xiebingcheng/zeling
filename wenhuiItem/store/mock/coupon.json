@@ -1,0 +1,26 @@
+{
+  "resCode":"000",
+  "resMsg":"success",
+  "list": [
+    {
+      "amount":"10",
+      "minBuyAmount":"满200元可用",
+      "effectiveDate":"2016-12-3"
+    },
+    {
+      "amount":"10",
+      "minBuyAmount":"满200元可用",
+      "effectiveDate":"2016-12-3"
+    },
+    {
+      "amount":"10",
+      "minBuyAmount":"满200元可用",
+      "effectiveDate":"2016-12-3"
+    },
+    {
+      "amount":"10",
+      "minBuyAmount":"满200元可用",
+      "effectiveDate":"2016-12-3"
+    }
+  ]
+}

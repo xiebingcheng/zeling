@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="avalon.js" type="text/javascript"></script>
+    <script>
+        avalon.ready(function() {
+            avalon.define({
+                $id: "simple",
+                firstName: "司徒",
+                lastName: "正美",
+                array: ["aaa", "bbb", "ccc"],
+                argsClick: function(e, a, b) {
+                    alert(a+ "  "+b)
+                },
+                loopClick: function(a) {
+                    alert(a)
+                }
+            });
+            avalon.scan();
+        })
+
+    </script>
+</head>
+<body>
+    <fieldset ms-controller="simple">
+        <legend>例子</legend>
+        <div ms-click="argsClick($event, 100, firstName)">点我</div>
+        <div ms-each-el="array">
+            <p ms-click="loopClick(el)">{{el}}</p>
+        </div>
+    </fieldset>
+</body>
+</html>

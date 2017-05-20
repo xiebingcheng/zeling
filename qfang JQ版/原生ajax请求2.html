@@ -1,0 +1,19 @@
+<script>
+    function get(url) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", url, true);
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState == 4){
+                if(xhr.status == 200){
+                    console.log(xhr.response);
+                }else{
+                    alert("error");
+                }
+            }
+        }
+        xhr.send(null);
+    }
+    var url = "http://192.168.7.150:3000/qfang_list?tap=01";
+    get(url);
+
+</script>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/store/js/common-bindevents.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/store/js/common.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/store/js/detail.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/store/js/faceToFace.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/store/js/index.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/store/js/index2.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/store/js/index3.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/store/js/login01.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/store/js/payResult.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/store/js/payindex.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/store/js/register01.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/store/js/shoppingcar.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/store/js/sureOrder.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xiaoniu/js/pagejs/index.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xiaoniu/js/pagejs/login.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xiaoniu/js/pagejs/myAccount.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xiaoniu/js/pagejs/registerIndex.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xiaoniu/js/pagejs/registerSubmit.js" charset="UTF-8" />
+  </component>
+</project>

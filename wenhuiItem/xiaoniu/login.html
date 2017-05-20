@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)login.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>小牛在线</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta name="wap-font-scale" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="css/wx_common.css">
+<link rel="stylesheet" type="text/css" href="css/wx_login.css">
+<script src="js/hm.js"></script></head>
+<body ms-controller="root">
+<div class="wx_top"> <a class="wx_top_logo" href="index.html"> </a> <span class="wx_top_gap"></span> <span class="wx_top_title">登录</span> </div>
+<div class="wx_login_box">
+  <form id="loginForm" autocomplete="off">
+    <div class="input_box">
+      <input ms-duplex="phone" type="text" style="line-height:normal;" placeholder="手机号码/用户名/邮箱" id="username" maxlength="16" name="username" class="wx_icon_user input_text" tabindex="1">
+    </div>
+    <div class="input_box">
+      <input ms-duplex="password" type="password" style="line-height:normal;" placeholder="输入登录密码" id="password" maxlength="20" name="password" class="wx_icon_pw input_text" tabindex="2">
+    </div>
+    <div id="passwordTip" class="wx_tip" style="display:none;margin-top:-15px;margin-bottom:10px;"></div>
+    <div class="wx_login_check_code">
+      <input ms-duplex="code" type="tel" style="line-height:normal;" placeholder="请输入验证码" id="code" name="code" maxlength="6" class="input_text" value="" tabindex="3">
+      <span class="vcode"> <img id="codeNum" class="verifyImg" style="width:109px;height:45px;" title="换一张" alt="验证码" src="js/captcha"> </span> </div>
+    <!--登录超时提示-->
+    
+    
+    	<div id="error-box" class="wx_tip"></div>
+    
+    <a ms-click="next" id="wx_loginSubmit" tabindex="4" class="btn_wap wx_btn_orange"> 立即登录 </a>
+    <div class="xn_login_blow">
+    	<a class="fpwd" href="javascript:void(0);"> 忘记登录密码？ </a>
+        <span class="xn_noAccount">还没有账户？ <a class="wx_reg_now" href="register-index.html"> 立即注册 </a> </span>
+    </div>
+  </form>
+</div>
+<script src="js/xn.js"></script>
+<!--<script>
+	//publish
+	define('load',function(require, exports, module) {
+		require('/weixin/resources/weixin/static/module/login/main.js?a6278fba68329777');
+		seajs.use("res/module/login/main");
+	});
+	seajs.use("load");
+</script>
+
+<script>
+//百度统计
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?a8083b9357dade16389e88eed86fe3df";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})()
+</script>-->
+
+<script src="js/libs/zepto-min.js"></script>
+<script src="js/libs/avalon.js"></script>
+<script src="js/libs/common.js"></script>
+<script src="js/pagejs/login.js"></script>
+
+</body></html>

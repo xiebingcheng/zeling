@@ -1,0 +1,30 @@
+{
+  "resCode": "000",
+  "resMsg": "success",
+  "limitAmount": "80000000",
+  "remainAmount": "4000456",
+  "startAmount": "1",
+  "annualYield": "7.00%",
+  "extremeIncome": "1.69",
+  "yieldList": [
+    {
+      "prdName": "天天牛",
+      "yield": "7.00%"
+    },
+    {
+      "prdName": "货币基金",
+      "yield": "3.00%"
+    },
+    {
+      "prdName": "银行活期",
+      "yield": "0.28%"
+    }
+  ],
+  "prdName": "天天牛",
+  "investRange": "货币基金以及由平台推荐的真实借款项目（100%适用于平台风险备用金制度）",
+  "term": "活期",
+  "assetSize": "200060000",
+  "buyLimit": "300000",
+  "buyCost": "0",
+  "extractCost": "0"
+}

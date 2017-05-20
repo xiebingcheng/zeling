@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="avalon.js"></script>
+    <script>
+        avalon.define({
+            $id: "test",
+            xxx: "引入内部模板"
+        })
+    </script>
+</head>
+<body>
+<!--    <ul ms-each-item="array">
+        <li ms-click="$remove" ms-if="$index % 2 == 0">{{ item }} -&#45;&#45; {{$index}}</li>
+        &lt;!&ndash;<li ms-click="$remove" ms-if="$index % 2 != 0">{{ item }} -&#45;&#45; {{$index}}</li>&ndash;&gt;
+    </ul>-->
+
+<!--    <div ms-controller="AAA">
+        <div>{{name}} :  {{color}}</div>
+        <div ms-controller="BBB">
+            <div>{{name}} :  {{color}}</div>
+            <div ms-controller="CCC">
+                <div>{{name}} :  {{color}}</div>
+            </div>
+            <div ms-important="DDD">
+                <div>{{name}} :  {{color}}</div>
+            </div>
+        </div>
+    </div>-->
+
+<!--    <script>
+
+/*        avalon.define({
+            $id: "test",
+            array: "a,b,c,d,e,f,g".split(",")
+        });*/
+        avalon.ready(function() {
+            avalon.define({
+                $id: "AAA",
+                name: "liger",
+                color: "green"
+            });
+            avalon.define({
+                $id: "BBB",
+                name: "sphinx",
+                color: "red"
+            });
+            avalon.define({
+                $id: "CCC",
+                name: "dragon" //不存在color
+            });
+            avalon.define({
+                $id: "DDD",
+                name: "sirenia", //不存在color
+            });
+            avalon.scan()
+        })
+    </script>-->
+
+    <script type="avalon" id="tpl">
+        here, {{ 3 + 6 * 5  }}
+    </script>
+
+    <div ms-controller="test">
+        <p>{{xxx}}</p>
+        <div style="border:solid 1px red" ms-include="'tpl'"></div>
+    </div>
+</body>
+</html>

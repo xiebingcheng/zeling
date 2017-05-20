@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://www.xiaoniu88.com/weixin/register -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>注册-小牛在线</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta name="wap-font-scale" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="./register2_files/wx_common.css">
+<link rel="stylesheet" type="text/css" href="./register2_files/wx_register.css">
+<script src="./register2_files/hm.js"></script></head>
+<body class="body-bg">
+<div class="wx_top">
+	
+	
+
+<a class="wx_top_logo" href="https://www.xiaoniu88.com/weixin/index"></a>
+
+
+
+
+	<span class="wx_top_gap"></span>
+	<span class="wx_top_title">快速注册</span>
+
+
+
+
+
+    
+    <div class="wx_top_btn" id="wx_topLogin" style="display:none;"><a href="./register2_files/register2.html">免费注册</a></div>
+
+</div>
+<div class="wx_register" id="wxRegister">
+  <!--第一步-->
+  <div class="register-form1" id="stepForm1" style="display: none;">
+  	<hr class="fm-hr">
+    <form action="https://www.xiaoniu88.com/weixin/register#" onsubmit="return false" method="post" name="pageform" id="pageform">
+      <input type="hidden" value="01" name="refferee_source" id="refferee_source">
+      <input type="hidden" value="" name="channel" id="channel">
+      <input type="hidden" value="" name="word" id="word">
+      <!--手机号码-->
+      <div class="fm-item">
+      	<fieldset class="fm-mobile">
+            <label class="fm-label"><span></span><i></i></label>
+            <div class="fm-box">
+                <input class="fm-input" type="tel" maxlength="11" name="mobile" id="mobile" placeholder="请输入手机号码" readonly="">
+                <span class="fm-icon fm-checking-ok" style="display: inline;"></span>
+            </div>
+        </fieldset>
+      </div>
+      <!--图形验证码-->
+      <div class="fm-item fm-item-r">
+        <fieldset class="fm-code">
+            <label class="fm-label"><span></span><i></i></label>
+            <div class="fm-box">
+                <input class="fm-input" type="tel" maxlength="6" name="codeImg" id="codeImg" placeholder="请填写右边验证码">
+                <span class="fm-icon fm-clear" style="display: none;"></span>
+                <a href="javascript:void(0);" class="fm-item-img"><img id="codeImgNum" title="换一张" alt="图形验证码" src="./register2_files/captcha"></a>
+            </div>
+        </fieldset>
+      </div>
+      <div class="fm-error" id="step1Error" style="display: none;">请输入图形验证码</div>
+      <div class="fm-btn">
+      	<a href="javascript:void(0);" class="wx_btn_org reg-submit wx_btn_disabled" id="step1Submit">立即注册...</a>
+      </div>
+      
+      <div class="fm-agreement">
+      	<p>阅读并同意<a href="https://www.xiaoniu88.com/weixin/resources/weixin/terms.html">《小牛在线服务协议》</a></p>
+      </div>
+      
+      <div class="reg-ad">
+      	<img src="./register2_files/register_ad_ewm.jpg">
+      </div>
+    </form>
+  </div>
+  <!--第二步-->
+  <div class="register-form2" id="stepForm2">
+  	<div class="fm-progress">
+    	<div class="fm-progress-step"><span class="curr">注册</span><span class="curr">验证手机</span><span>注册成功</span></div>
+        <div class="fm-progress-line"><i style="width:50%;"><span></span></i></div>
+    </div>
+    <div class="fm-tip">验证码已经发送到<strong id="yourMobile">13265786637</strong>手机上，请输入您收到的验证码或 <a href="javascript:void(0);" id="changeMobile">更换手机号码</a></div>
+    <!--密码-->
+    <div class="fm-item">
+    <fieldset class="fm-password">
+        <label class="fm-label"><span></span><i></i></label>
+        <div class="fm-box">
+           <input type="hidden" id="encryptPassword" value="">
+           <input class="fm-input" type="text" maxlength="20" name="password" id="password" onpaste="return false" oncontextmenu="return false" oncopy="return false" oncut="return false" placeholder="请设置登录密码">
+           <span class="fm-icon fm-clear" style="right:55px"></span>
+            <span class="fm-action" id="fmHide">隐藏</span>
+        </div>
+    </fieldset>
+    </div>
+    <!--短信验证码-->
+    <div class="fm-item fm-item-r">
+        <fieldset class="fm-code">
+            <label class="fm-label"><span></span><i></i></label>
+            <div class="fm-box">
+                <input class="fm-input" type="tel" maxlength="6" name="code" id="code" placeholder="输入验证码">
+                <span class="fm-icon fm-clear"></span>
+                <a href="javascript:void(0);" class="fm-item-btn fm-disabled" id="reSend" left_time_int="60">重发短信(42秒)</a>
+            </div>
+        </fieldset>
+    </div>
+    <div class="fm-tip fm-tip2 reg-code-tip clearfix"> 
+    	<div class="fl">
+    		<p id="sendVoiceTip" style="display:none;">请注意接听系统语音验证码</p>
+        	<p id="codeError" style="display: none;">请输入图形验证码</p>
+        </div>
+        <a href="javascript:void(0);" class="fr" id="sendVoice">使用语音验证</a>
+    </div>
+    
+    
+         <!--推荐人-->
+        <div class="fm-refferee-text">有人推荐您注册吗？</div>
+        <div class="fm-item">
+        <fieldset class="fm-refferee">
+            <label class="fm-label"><span></span><i></i></label>
+            <div class="fm-box">
+               <input class="fm-input" type="text" maxlength="20" value="" name="refferee" id="refferee" onpaste="return false" oncontextmenu="return false" oncopy="return false" oncut="return false" placeholder="推荐人的用户名或手机号">
+               <span class="fm-icon fm-clear"></span>
+            </div>
+        </fieldset>
+        </div>
+        <div class="fm-error reg-ref-tip" id="refError" style="display: none;"></div>
+    
+    <div class="fm-btn">
+      	<a href="javascript:void(0);" class="wx_btn_org reg-submit" id="step2Submit">下一步</a>
+    </div>
+  </div>
+  <div style="display:none;">
+  <!--注册成功-->
+  <form action="https://www.xiaoniu88.com/weixin/register#" method="post" id="successForm">
+  	<input type="hidden" value="" name="channel">
+  </form>
+  </div>
+</div>
+<script src="./register2_files/xn.js"></script>
+<script>
+	define('load',function(require, exports, module) {
+		require('/weixin/resources/weixin/static/module/common/common.js?e236eb081351b195');
+		require('/weixin/resources/weixin/static/module/register/main.js?d1b47751954fe7b8');
+		seajs.use("res/module/register/main");
+	});
+	seajs.use("load");
+</script>
+
+<script>
+//百度统计
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?a8083b9357dade16389e88eed86fe3df";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})()
+</script>
+
+
+</body></html>

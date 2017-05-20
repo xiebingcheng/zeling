@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>avalon</title>
+    <script src="avalon.js"></script>
+    <script>
+        var vm=avalon.define({
+            $id:"test",
+            name:"avalon"
+        });
+//        avalon.scan();
+    </script>
+    <script>
+
+        avalon.ready(function() {
+            avalon.define({
+                $id: "simple",
+                firstName: "司徒",
+                lastName: "正美",
+                a: ["aaa", "bbb", "ccc"],
+                aClick: function(e, a, b) {
+                    alert(a+ "  "+b)
+                },
+                bClick: function(a) {
+                    alert(a)
+                }
+            });
+            avalon.scan();
+        })
+
+    </script>
+</head>
+<body>
+
+    <div ms-controller="test">
+        <p>hell,{{name}}!</p>
+    </div>
+
+    <fieldset ms-controller="simple">
+        <legend>例子</legend>
+        <div ms-click="aClick($event, 100, firstName)">点我</div>
+        <div ms-each-x="a" >
+            <p ms-click="bClick(x)">{{x}}</p>
+        </div>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <meta name="format-detection" content="telephone=no,email=no">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <script type="text/javascript" src="../js/libs/flexible.js"></script>
+
+</head>
+<body class="wrapper">
+<div id="header">
+    <div id="home"><a href="home.html">好邻居便利店</a></div>
+    <div class="car_theme" id="car_edit">编辑</div>
+    <div id="my"><a></a></div>
+</div>
+<div id="shoppingcar">
+    <div id="main">
+        <ul id="shopping_list">
+
+        </ul>
+    </div>
+    <div id="floatbar_bottom">
+        <div id="select_all" class="select">
+            <div class="select_all no_select select_ok"></div>
+            <div class="select_all_txt">全选</div>
+        </div>
+        <div id="total_box"><!---->
+            <div>￥<span id="pay_account">109.00</span></div>
+            <div id="total_txt">合计</div>
+        </div>
+        <div id="account_btn"><a>去结算</a></div>
+        <div id="delete_btn" class="dsn">删除</div>
+    </div>
+    <!--+-数量弹框-->
+    <div class="pop_wrapper dsn" id="add_minus_Pop">
+        <div class="pop_con">
+            <h2>请输入数量</h2>
+
+            <div class="number_box">
+                <div class="number_minus js_minus"></div>
+                <input type="number" id="number_input" value="0">
+
+                <div class="number_add js_add"></div>
+            </div>
+            <div class="pop_btn" id="number_Btn">
+                <div class="pop_remove_btn">取消</div>
+                <div class="pop_sure_btn">确定</div>
+            </div>
+        </div>
+    </div>
+    <div class="pop_wrapper dsn" id="sure_Del">
+        <div class="pop_con">
+            <h2>确定删除这<span></span>件商品吗？</h2>
+
+            <div class="pop_btn" id="sure_Del_btn">
+                <div class="pop_remove_btn">考虑一下</div>
+                <div class="pop_sure_btn">确定</div>
+            </div>
+        </div>
+    </div>
+    <div class="pop_wrapper dsn" id="none_Select">
+        <div class="pop_con">
+            <h2>您还没有选择商品哦！</h2>
+        </div>
+    </div>
+</div>
+<!--购物车为空-->
+<div id="empty_cart" class="dsn">
+    <div id="empty">购物车空空如也T.T</div>
+    <div class="btn_box" id="goto_shop"><a>去逛逛</a></div>
+</div>
+<script type="template/text" id="tpl">
+    <%
+    for(var i=0;i<obj.length;i++) {
+    %>
+    <li class="select" data-id="<%=obj[i].id%>" data-price="<%=obj[i].price%>">
+        <div class="no_select select_ok"></div>
+        <div class="shopping_img"><a>
+            <img src="<%=obj[i].imgUrl%>">
+            <!--<img src="../images/goods1.png">-->
+        </a></div>
+        <div class="shopping_box">
+            <h2><%=obj[i].shopName%></h2>
+
+            <div class="shopping_box_bottom">
+                <div class="unit_price">￥<span><%=obj[i].price%></span></div>
+                <div class="number">x<span class="prdNum"><%=obj[i].prdNum%></span></div>
+                <!--编辑状态加减框-->
+                <div class="number_content dsn">
+                    <div class="minus_icon js_minus"></div>
+                    <div class="number_edit"><%=obj[i].prdNum%></div>
+                    <div class="add_icon js_add"></div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <%
+    }
+    %>
+</script>
+<script src="../js/libs/jquery-1.11.1.js"></script>
+<script  src="../js/libs/Touch.1.1.js"></script>
+<script src="../js/plugin/lhgdialog.js?skin=mac"></script>
+<script src="../js/libs/underscore.js"></script>
+<script src="../js/common-ajax2.js"></script>
+<script src="../js/shoppingcar.js"></script>
+</body>
+</html>

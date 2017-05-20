@@ -1,0 +1,8 @@
+jquery一般用于pc端
+移动端使用zepto.js
+
+下载方式:
+百度搜索zepto，置顶会有两个网站
+http://www.css88.com/doc/zeptojs_api/(zepto主体和touch模块分离，注意下载touch模块)
+
+http://www.zeptojs.cn/

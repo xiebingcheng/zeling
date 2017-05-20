@@ -1,0 +1,70 @@
+{
+  "resCode": "000",
+  "resMsg": "success",
+  "shopNum": 0,
+  "list": [
+    {
+      "shopName": "炸鸡茄子饭",
+      "price": "20",
+      "oldPrice": "30",
+      "imgUrl": "http://op.jiawang.cn:9090/dd_op/attached/image/20150714/20150714114215-1100436-product_pic.jpg",
+      "id": "1110"
+    },
+    {
+      "shopName": "酱烧鸭拌饭",
+      "price": "18",
+      "oldPrice": "",
+      "imgUrl": "http://op.jiawang.cn:9090/dd_op/attached/image/20150714/20150714114213-1100397-product_pic.jpg",
+      "id": "1111"
+    },
+    {
+      "shopName": "土豆焖排骨饭",
+      "price": "18",
+      "oldPrice": "",
+      "imgUrl": "http://op.jiawang.cn:9090/dd_op/attached/image/20150714/20150714114214-1100514-product_pic.jpg",
+      "id": "1112"
+    },
+    {
+      "shopName": "梅菜扣肉饭",
+      "price": "19",
+      "oldPrice": "",
+      "imgUrl": "http://op.jiawang.cn:9090/dd_op/attached/image/20150714/20150714114213-1100592-product_pic.jpg",
+      "id": "1113"
+    },
+    {
+      "shopName": "小炒肉饭",
+      "price": "16",
+      "oldPrice": "",
+      "imgUrl": "http://op.jiawang.cn:9090/dd_op/attached/image/20150714/20150714114215-1100631-product_pic.jpg",
+      "id": "1114"
+    },
+    {
+      "shopName": "回锅肉饭",
+      "price": "16",
+      "oldPrice": "",
+      "imgUrl": "http://op.jiawang.cn:9090/dd_op/attached/image/20150714/20150714114212-1100748-product_pic.jpg",
+      "id": "2220"
+    },
+    {
+      "shopName": "鲜菇牛肉饭",
+      "price": "18",
+      "oldPrice": "",
+      "imgUrl": "http://op.jiawang.cn:9090/dd_op/attached/image/20150714/20150714114215-1100475-product_pic.jpg",
+      "id": "2221"
+    },
+    {
+      "shopName": "蒸排骨饭",
+      "price": "18",
+      "oldPrice": "",
+      "imgUrl": "http://op.jiawang.cn:9090/dd_op/attached/image/20150714/20150714114212-1100553-product_pic.jpg",
+      "id": "2222"
+    },
+    {
+      "shopName": "外婆菜肉松饭",
+      "price": "15",
+      "oldPrice": "",
+      "imgUrl": "http://op.jiawang.cn:9090/dd_op/attached/image/20150714/20150714114214-1100709-product_pic.jpg",
+      "id": "2223"
+    }
+  ]
+}

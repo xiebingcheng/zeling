@@ -1,0 +1,14 @@
+{
+  "resCode": "000",
+  "success":"success",
+  "productDetail": {
+    "shopName" :"ice cream",
+    "price" : "32",
+    "discription" :"超级美味",
+    "leftNum" : "102",
+    "imgList": [
+      "http://img2.imgtn.bdimg.com/it/u=3501183105,2810598219&fm=21&gp=0.jpg",
+      "http://img3.imgtn.bdimg.com/it/u=1488184519,3541623648&fm=21&gp=0.jpg"
+    ]
+  }
+}

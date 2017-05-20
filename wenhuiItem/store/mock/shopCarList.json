@@ -1,0 +1,30 @@
+{
+  "resCode": "000",
+  "resMsg": "success",
+  "list": [
+    {
+      "shopName": "酱烧鸭拌饭",
+      "price": "18",
+      "oldPrice": "",
+      "imgUrl": "http://op.jiawang.cn:9090/dd_op/attached/image/20150714/20150714114213-1100397-product_pic.jpg",
+      "id": "1111",
+      "prdNum": "1"
+    },
+    {
+      "shopName": "土豆焖排骨饭",
+      "price": "18",
+      "oldPrice": "",
+      "imgUrl": "http://op.jiawang.cn:9090/dd_op/attached/image/20150714/20150714114214-1100514-product_pic.jpg",
+      "id": "1112",
+      "prdNum": 2
+    },
+    {
+        "shopName": "梅菜扣肉饭",
+      "price": "19",
+      "oldPrice": "",
+      "imgUrl": "http://op.jiawang.cn:9090/dd_op/attached/image/20150714/20150714114213-1100592-product_pic.jpg",
+      "id": "1113",
+      "prdNum": "1"
+    }
+  ]
+}

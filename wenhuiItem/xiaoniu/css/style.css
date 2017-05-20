@@ -1,0 +1,71 @@
+﻿*{padding:0px;margin:0px;border:none;}
+
+body{color: #666;font-size: 13px;font-family: 'Microsoft YaHei';background-image:url(../img/xn.png);}
+
+h4{font-size:12px;font-weight:700;}
+
+.content{padding:10px;}
+
+.content a{color: #666;}
+
+.content a:hover{color:#028ccb}
+
+.titleArea{border-bottom:2px solid #ababab;}
+
+.titleArea .title{text-align:center;font-size:16px;color:#333}
+
+.downloadArea:after{content:"";display:block;clear:both;}
+
+.downloadArea{height:23px;}
+
+.downloadArea .download{display:block;width:61px;height:23px;background:url(../img/download.png) no-repeat 0 0;float:right;}
+
+.htph{text-align:right;line-height:40px;}
+
+.jiafang{}
+
+.jiafang span{padding-left:5px;}
+
+.table{font-size:12px;}
+
+.table td,.table th{border-collapse: separate;border-spacing: 0;border:1px solid #d7d7d5;text-align:center;padding:10px 5px;word-break:break-all;}
+
+.table th{background:#f8f5f0;}
+
+.bingfang{margin:10px 0px;}
+
+.listArea{margin:10px 0px;}
+
+.listArea .listLine{width:100%;position:relative;}
+
+.listArea .listLine:after{content:"";display:block;clear:both;}
+
+.listLine .listIndex{width:25px;float:left;}
+
+.listLine .listContent{margin-left:35px;}
+
+.beizhu{padding-left:40px;margin:10px 0px;}
+
+.qianming{margin:30px 0px;}
+
+.underLine{border-bottom:1px solid #666;padding:0px 10px;min-width:30px;text-align:center;}
+
+.textLine{text-decoration: underline;line-height:20px;}
+
+.margin_bottom1x{margin-bottom:10px;}
+
+.instructions p{text-indent:2em;}
+
+.bold{font-weight:bold;}
+
+.end{text-align:center;padding:10px;}
+
+.minWidth{min-width:200px;}
+
+.titleArea .wx_terms_title { font-size:16px; color:#666; line-height:50px; font-weight:bold; }
+.wx_terms { padding:21px 21px 50px 21px; overflow:hidden; }
+.wx_terms { color:#666; font-size:14px; line-height:25px; }
+.wx_terms h1 { padding:0 0 15px 0; text-align:center; font-weight:bold; }
+.wx_terms h3 { padding:10px 0; font-weight:bold; }
+.wx_terms p { text-indent:28px; font-size:0.857em; word-wrap:break-word; word-break:break-all; }
+.wx_terms blockquote p { text-indent:0; margin-bottom:10px; }
